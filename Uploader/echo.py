@@ -53,7 +53,7 @@ AUTH=Config.AUTH_USERS
 
 @Client.on_message(filters.private & filters.regex(pattern=".*http.*"))
 async def echo(bot, update):
-    if str(update.from_user.id) == AUTH:
+    if str(update.from_user.id) in AUTH:
         logger.info(update.from_user)
         url = update.text
         youtube_dl_username = None

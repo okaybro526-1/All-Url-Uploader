@@ -68,4 +68,4 @@ class Config(object):
     BOT_USERNAME = os.environ.get("BOT_USERNAME", "")
     ADL_BOT_RQ = {}
     AUTH_USERS = set(str(x) for x in os.environ.get("AUTH_USERS", "").split())
-    AUTH_USERS.append(OWNER_ID)
+    

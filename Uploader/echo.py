@@ -144,7 +144,7 @@ async def echo(bot, update):
             reply_to_message_id=update.id
 
         )
-        if update.from_user.id not in AUTH:
+        if str(update.from_user.id) not in AUTH:
 
             if str(update.from_user.id) in Config.ADL_BOT_RQ:
                 current_time = time.time()

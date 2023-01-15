@@ -34,87 +34,78 @@ I am Powerful Url Uploader Bot
 
     HELP_TEXT = """
 
-# Send me the Google Drive | ytdl | direct links.
+Send me the Google Drive | ytdl | direct links.
+Select the desired option.
+Then be relaxed your file will be uploaded soon..
 
-# Select the desired option.
-
-# Then be relaxed your file will be uploaded soon..
- 
 """
 
 # give credit to developer
 
     ABOUT_TEXT = """
-<b>♻️ My Name</b> : Url Uploader Bot
+<b>🤴 Owner :</b> <a href="https://t.me/pro_noober">𝗚𝗮𝗮𝘄𝗱</a>
 
-<b>🌀 Channel</b> : <a href="https://t.me/TMWAD">@TMWAD</a>
+<b>🕶️ Channel</b> : <a href="https://t.me/XtronBots">This One</a>
 
-<b>🌺 Heroku</b> : <a href="https://heroku.com/">Heroku</a>
-
-<b>📑 Language :</b> <a href="https://www.python.org/">Python 3.10.5</a>
-
-<b>🇵🇲 Framework :</b> <a href="https://docs.pyrogram.org/">Pyrogram 2.0.30</a>
-
-<b>👲 Developer :</b> <a href="https://t.me/kinu6">@kinu6</a>
 
 """
 
     PROGRESS = """
-🔰 Speed : {3}/s\n\n
-🌀 Done : {1}\n\n
-🎥 Tᴏᴛᴀʟ sɪᴢᴇ  : {2}\n\n
-⏳ Tɪᴍᴇ ʟᴇғᴛ : {4}\n\n
+<b>Speed :</b> {3}/s\n\n
+<b>Done :</b> {1}\n\n
+<b>Tᴏᴛᴀʟ sɪᴢᴇ  :</b> {2}\n\n
+<b>Tɪᴍᴇ ʟᴇғᴛ :</b> {4}\n\n
 """
     ID_TEXT = """
-🆔 Your Telegram ID 𝐢𝐬 :- <code>{}</code>
+<b>Your Telegram ID is :-</b> <code>{}</code>
 """
 
     INFO_TEXT = """
 
- 🤹 First Name : <b>{}</b>
+First Name : <b>{}</b>
 
- 🚴‍♂️ Second Name : <b>{}</b>
+Second Name : <b>{}</b>
 
- 🧑🏻‍🎓 Username : <b>@{}</b>
+Username : <b>@{}</b>
 
- 🆔 Telegram Id : <code>{}</code>
+Telegram Id : <code>{}</code>
 
- 📇 Profile Link : <b>{}</b>
+Profile Link : <b>{}</b>
 
- 📡 Dc : <b>{}</b>
+Dc : <b>{}</b>
 
- 📑 Language : <b>{}</b>
+Language : <b>{}</b>
 
- 👲 Status : <b>{}</b>
+Status : <b>{}</b>
 """
 
     START_BUTTONS = InlineKeyboardMarkup(
         [[
-            InlineKeyboardButton('❓ Help', callback_data='help'),
-            InlineKeyboardButton('🦊 About', callback_data='about')
+            InlineKeyboardButton('Help', callback_data='help'),
+            InlineKeyboardButton('About', callback_data='about')
         ], [
-            InlineKeyboardButton('📛 Close', callback_data='close')
+            InlineKeyboardButton('Close', callback_data='close')
         ]]
     )
     HELP_BUTTONS = InlineKeyboardMarkup(
         [[
-            InlineKeyboardButton('🏠 Home', callback_data='home'),
-            InlineKeyboardButton('🦊 About', callback_data='about')
+            InlineKeyboardButton('Home', callback_data='home'),
+            InlineKeyboardButton('About', callback_data='about')
         ], [
-            InlineKeyboardButton('📛 Close', callback_data='close')
+            InlineKeyboardButton('Close', callback_data='close')
         ]]
     )
     ABOUT_BUTTONS = InlineKeyboardMarkup(
         [[
-            InlineKeyboardButton('🏠 Home', callback_data='home'),
-            InlineKeyboardButton('❓ Help', callback_data='help')
+            InlineKeyboardButton('Home', callback_data='home'),
+            InlineKeyboardButton('Help', callback_data='help')
         ], [
-            InlineKeyboardButton('📛 Close', callback_data='close')
+            InlineKeyboardButton('Close', callback_data='close')
         ]]
     )
     BUTTONS = InlineKeyboardMarkup(
         [[
-            InlineKeyboardButton('📛 Close', callback_data='close')
+            InlineKeyboardButton('Close', callback_data='close')
         ]]
     )
     FORMAT_SELECTION = "Now Select the desired formats"
@@ -126,4 +117,4 @@ I am Powerful Url Uploader Bot
     FF_MPEG_DEL_ETED_CUSTOM_MEDIA = "✅ Media cleared succesfully."
     CUSTOM_CAPTION_UL_FILE = " "
     NO_VOID_FORMAT_FOUND = "ERROR... <code>{}</code>"
-    SLOW_URL_DECED = "Gosh that seems to be a very slow URL. Since you were screwing my home, I am in no mood to download this file. Meanwhile, why don't you try this:==> https://shrtz.me/PtsVnf6 and get me a fast URL so that I can upload to Telegram, without me slowing down for other users."
+    SLOW_URL_DECED = "Gosh that seems to be a very slow URL. Since you were screwing my home, I am in no mood to download this file."

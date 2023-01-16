@@ -24,3 +24,9 @@ wget
 youtube_dl
 Flask==2.2.2
 gunicorn==20.1.0
+
+python-dotenv==0.20.0
+instaloader
+pytz
+get-video-properties
+ffmpeg-python

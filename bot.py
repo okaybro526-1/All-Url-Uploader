@@ -1,39 +1,19 @@
 import os
 from pyrogram import Client, idle
-from Uploader.config import Config
+
+if bool(os.environ.get("WEBHOOK")):
+    from Uploader.config import Config
+else:
+    from sample_config import Config
+
+import os
+
 import logging
-from pyrogram.raw import functions, types
-from pyromod import listen
-
-
-STATUS=Config.STATUS
-
-USER=Config.USER
-bot = Client(
-    "InstaSessibon",
-    bot_token=Config.BOT_TOKEN,
-    api_id=Config.API_ID,
-    api_hash=Config.API_HASH,
-    workers=50,
-    plugins=dict(root="plugins")
-    )
-
 logging.basicConfig(level=logging.DEBUG,
                     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
 logging.getLogger("pyrogram").setLevel(logging.WARNING)
-
-async def main():
-    async with bot:
-        await bot.download_media(Config.INSTA_SESSIONFILE_ID, file_name=f"./{Config.USER}")
-        Config.L.load_session_from_file(USER, filename=f"./{USER}")
-        STATUS.add(1)
-
-if Config.INSTA_SESSIONFILE_ID:
-    bot.run(main())
-    
-bot.start()
 
 if __name__ == "__main__":
 
